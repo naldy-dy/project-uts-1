@@ -28,8 +28,8 @@
                         <span>Buat Blog</span>
                     </a>
                 </li>
-                <li class="{{checkRouteActive('kategori')}}" class="{{checkRouteActive('kategori.index')}}">
-                    <a href="{{url('kategori')}}">
+                <li class="{{checkRouteActive('kategori')}}">
+                    <a href="{{url('kategori')}}"  class="{{checkRouteActive('kategori')}}">
                         <i class="icon-list"></i>
                         <span>Kategori</span>
                     </a>

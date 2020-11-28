@@ -20,7 +20,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
     <section id="main-content">
     	<section class="wrapper">
-    		
+    		@include('utils.notif')
             @yield('content')
             <!-- disini Konten -->
     		

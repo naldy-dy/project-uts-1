@@ -9,7 +9,6 @@ class KategoriController extends Controller{
 
 	function indexKategori(){
 		$data['list_kategori'] = Kategori::all();
-		$data['list_blog'] = Konten::all();
 		return view('admin.kategori.index', $data);
 	}
 
@@ -22,25 +21,28 @@ class KategoriController extends Controller{
 		$kategori->nama = request('nama');
 		$kategori->save();
 
-		return redirect('admin/kategori');
-	}
-
-	function showKategori(){
-		return view('admin.kategori.show');
-	}
-
-	function editKategori(){
-		return view('konten');
-	}
-
-	function updateKategori(){
-		return view('konten');
+		return redirect('kategori');
 	}
 
 
-	function destroyKategori(){
-		return view('konten');
+	function editKategori(Kategori $kategori){
+		$data['list_kategori'] = Kategori::all();
+		return view('admin.kategori.edit',$data);
 	}
+
+	function updateKategori(Kategori $kategori){
+		$kategori->nama = request('nama');
+		$kategori->save();
+
+		return redirect('kategori');
+	}
+
+
+		function destroy(Kategori $kategori){
+		$kategori->delete();
+		return redirect('kategori');
+	}
+
 
 
 }

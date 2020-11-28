@@ -15,6 +15,7 @@
 							<th>No</th>
 							<th>Judul</th>
 							<th>Kategori</th>
+							<th>Rilis</th>
 							<th>Aksi</th>
 						</thead>
 						<tbody>
@@ -23,10 +24,13 @@
 								<td>{{$loop->iteration}}</td>
 								<td>{{$blog->judul}}</td>
 								<td>{{$blog->kategori}}</td>
+								<td>{{$blog->created_at}}</td>
 								<td width="200px">
-									<a href="{{url('blog', $blog->id)}}" class="btn btn-warning"> <i class="fa fa-info"></i></a>
-									<a href="" class="btn btn-primary"> <i class="fa fa-edit"></i></a>
-									<a href="" class="btn btn-danger"> <i class="fa fa-trash"></i></a>
+									<div class="row">
+									<a href="{{url('blog', $blog->id)}}/show" class="btn btn-sm col-md-2 btn-warning"> <i class="fa fa-info"></i></a>
+									<a href="{{url('/blog', $blog->id)}}/edit" class="btn btn-sm col-md-2 btn-primary"> <i class="fa fa-edit"></i></a>
+									@include('utils.delete', ['url' => url('blog', $blog->id)]) 
+									</div>
 
 								</td>
 							</tr>

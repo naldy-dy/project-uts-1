@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 use App\Models\Kategori;
 use App\Models\Konten;
-class BlogController extends Controller{
 
+
+class BlogController extends Controller{
 
 	function indexBlog(){
 		$data['list_blog'] = Konten::all();
@@ -23,26 +24,32 @@ class BlogController extends Controller{
 		$blog->konten = request('konten');
 		$blog->save();
 
-		return redirect('blog/index')->with('success', 'Data Berhasil Ditambahkan');
+		return redirect('blog')->with('success', 'Data Berhasil Ditambahkan');
 	}
 
 
-	function showBlog(){
+	function showBlog(Konten $blog){
 		$data['blog'] = $blog;
-		return view('blog.show',$data);
+		return view('admin.blog.show', $data);
 	}
 
-	function editBlog(){
-		return view('konten');
+	function editBlog(Konten $blog){
+		$data['blog'] = $blog;
+		return view('admin.blog.edit',$data);
+	}
+  
+	function updateBlog(Konten $blog){
+		$blog->judul = request('judul');
+		$blog->konten = request('konten');
+		$blog->save();
+
+		return redirect('blog')->with('success', 'Data Berhasil DiUpdate');
 	}
 
-	function updateBlog(){
-		return view('konten');
-	}
 
-
-	function destroyBlog(){
-		return view('konten');
+	function destroy(Konten $blog){
+		$blog->delete();
+		return redirect('blog')->with('danger', 'Data Berhasil Dihapus');
 	}
 
 

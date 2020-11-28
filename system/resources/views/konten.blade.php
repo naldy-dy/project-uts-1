@@ -22,7 +22,7 @@
 <div class="row">
    <div class="container pt-5">
         <div class="col-md-9 pt-5">
-            <h1><b>Create an Art that shows the beauty in everyone’s ideas of flaws.</b></h1>
+            <h1><b>{{$blog->judul}}</b></h1>
         </div>
         <ul class="navbar-nav my-2" style="display: inline-table;">
             <li class="nav-item" style="float: right;margin-left: 30px;padding-right: 20px;">Posted on <strong>July 11, 2020</strong></li>
@@ -40,12 +40,9 @@
             <div class="col-md-12">
                 <div class="card my-5" style="border-radius: 20px;">
                     <div class="card-body">
-                        <h2 style="font-weight: bold;">How to create an Art that shows the beauty in everyone’s ideas of flaws.</h2>
 
                         <p class="my-4">
-                            Fusce faucibus ante vitae justo efficitur elementum. Donec et ipsum faucibus arcu ipsum elementum, luctus justo. ac purus semper. Fusce faucibus ante vitae justo efficitur sed et elementum. Donec ipsum faucibus arcu elementum, luctus justo. ac purus semper. Fusce faucibus ante vitae justo efficitur elementum. Donec ipsum faucibus arcu vitae justo efficitur elementum.
-
-                            Fusce faucibus ante vitae justo efficitur elementum. Donec ipsum faucibus arcu elementum, luctus justo. ac purus semper. Fusce faucibus ante vitae justo efficitur elementum. Donec ipsum faucibus arcu elementum, luctus justo. ac purus semper."
+                            {!! nl2br($blog->konten) !!}
 
                         </p>
                         <div class="row ml-2">
@@ -54,8 +51,8 @@
                                 <li style="float: left;" class="ml-2">
                                     <p class="m-0 mr-sm-4 mr-2">Tags :</p>
                                 </li style="float: left" class="ml-2">
-                                <li style="float: left;"><a href="#url" class="btn-small ">Fashion</a></li>
-                                <li style="float: left;" class="ml-2"><a href="#url" class="btn-small">Beauty</a></li>
+                                <li style="float: left;"><a href="#url" class="btn-small ">{{$blog->kategori}}</a></li>
+                                
 
                             </ul>
                         </div>
@@ -64,20 +61,23 @@
                 </div>
             </div>
 
+
+
              <div class="card my-5" style="border-radius: 20px;">
                 <div class="card-body">   
                     <div class="leave-comment-form my-3 " id="comment">
                         <h3 class="aside-title my-3">Leave a reply</h3>
-                        <form action="#" method="post">
+                        <form action="{{url('konten')}}" method="post">
+                            @csrf
                             <div class="input-grids">
                                 <div class="form-group">
-                                    <input type="text" name="Name" class="form-control" placeholder="Your Name" required="">
+                                    <input type="text" name="nama" class="form-control" placeholder="Your Name" required="">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="Email" class="form-control" placeholder="Email" required="">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required="">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="Comment" class="form-control" placeholder="Your Comment" required=""></textarea>
+                                    <textarea name="komentar" class="form-control" placeholder="Your Comment" required=""></textarea>
                                 </div>
                             </div>
                             <div class="submit text-right">
@@ -87,6 +87,9 @@
                     </div>
                 </div>
             </div>
+
+
+
 
             <div class="card" style="border-radius: 20px; padding: 10px;">
                 <div class="card-body">

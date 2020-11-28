@@ -21,11 +21,12 @@
 							<tr>
 								<td>{{$loop->iteration}}</td>
 								<td>{{$kategori->nama}}</td>
-								<td width="200px">
-									<a href="" class="btn btn-warning"> <i class="fa fa-info"></i></a>
-									<a href="" class="btn btn-primary"> <i class="fa fa-edit"></i></a>
-									<a href="" class="btn btn-danger"> <i class="fa fa-trash"></i></a>
+									<td width="200px">
+									<div class="row">
+									@include('utils.delete', ['url' => url('kategori', $kategori->id)]) 
+									</div>
 
+								</td>
 								</td>
 							</tr>
 							@endforeach
