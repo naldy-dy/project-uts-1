@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,20 +21,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('index', function () {
-    return view('index');
-});
-
-Route::get('konten', function () {
-    return view('konten');
-});
-
-Route::get('test', function () {
-    return view('test');
-});
+Route::get('index',[IndexController:: class, 'showIndex']);
+Route::get('konten',[IndexController:: class, 'showKonten']);
 
 // Admin Template
 
 Route::get('template', function () {
     return view('admin.template.base');
 });
+
+Route::get('beranda',[HomeController:: class, 'showBeranda']);
+Route::get('kategori',[HomeController:: class, 'showKategori']);
+
+
+
+// Blog Controller
+Route::get('blog',[BlogController:: class, 'indexBlog']);
+Route::get('blog/{create}',[BlogController:: class, 'createBlog']);
+Route::post('blog',[BlogController:: class, 'storeBlog']);
+Route::get('blog/{blog}', [BlogController::class, 'showBlog']);
+
+// Kategori COntroller
+Route::get('kategori',[KategoriController:: class, 'indexKategori']);
+Route::get('kategori/{create}',[KategoriController:: class, 'createKategori']);
+Route::post('kategori',[KategoriController:: class, 'storeKategori']);

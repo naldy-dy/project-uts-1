@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <head>
-<title>Visitors an Admin Panel Category Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Admin Dashboard</title>
 @include('section-admin.assets')
 </head>
 <body>
@@ -21,12 +21,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <section id="main-content">
     	<section class="wrapper">
     		
+            @yield('content')
             <!-- disini Konten -->
     		
         </section>
-
-    		  @include('section-admin.footer')
-      
+    	  @include('section-admin.footer')
     </section>
 </section>
 @include('section-admin.js')

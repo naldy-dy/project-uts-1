@@ -9,16 +9,17 @@ Author URL: http://w3layouts.com
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Shafablog.com</title>
-    @include('section.assets')
-   
+    <title>Blog Shafa</title>
+
+   @include('section.assets')
   </head>
   <body>
 <!-- header -->
 <header class="w3l-header">
 	<div class="container">
 	<!--/nav-->
-	@include('section.header')
+	
+    @include('section.header')
 	<!--//nav-->
 </header>
 <!-- //header -->
@@ -71,8 +72,8 @@ Author URL: http://w3layouts.com
                 <div class="item">
                     <div class="row slider-info">
                         <div class="col-lg-8 message-info align-self">
-                            <span class="label-blue mb-sm-4 mb-3">Beauty</span>
-                            <h3 class="title-big mb-4">Create an Art that shows the beauty in everyone’s ideas of flaws.
+                            <span class="label-blue mb-sm-4 mb-3">My Blog</span>
+                            <h3 class="title-big mb-4">Selamat datang di blog saya, Kreasikan keinginan anda
                             </h3>
                             <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                                 sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
@@ -84,58 +85,8 @@ Author URL: http://w3layouts.com
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="row slider-info">
-                        <div class="col-lg-8 message-info align-self">
-                            <span class="label-blue mb-sm-4 mb-3">Fashion and Style</span>
-                            <h3 class="title-big mb-4">Addicted to Fashion is the Armor to survive the reality of
-                                Everyday Life.
-                            </h3>
-                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
-                                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
-                                scelerisque sem feugiat. Nulla in eros purus.</p>
-                        </div>
-                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
-                            <img src="{{url('public')}}/assets/images/fashion.jpg" class="img-fluid radius-image-full" alt="client image">
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row slider-info">
-                        <div class="col-lg-8 message-info align-self">
-                            <span class="label-blue mb-sm-4 mb-3">Food and Wellness</span>
-                            <h3 class="title-big mb-4">Create healthy habits, not restrictions. Wellness is a taste of
-                                being.
-                            </h3>
-                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
-                                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
-                                scelerisque sem feugiat. Nulla in eros purus.</p>
-                        </div>
-                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
-                            <img src="{{url('public')}}/assets/images/food.jpg" class="img-fluid radius-image-full" alt="client image">
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row slider-info">
-                        <div class="col-lg-8 message-info align-self">
-                            <span class="label-blue mb-sm-4 mb-3">Lifestyle</span>
-                            <h3 class="title-big mb-4">To succeed in Life, you need 3 things : a wishbone, a backbone, a
-                                funny bone.
-                            </h3>
-                            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-                                sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
-                                provident quibusdam tenetur. Ut fermentum leo quis sapienet faucibus, at
-                                scelerisque sem feugiat. Nulla in eros purus.</p>
-                        </div>
-                        <div class="col-lg-4 col-md-8 img-circle mt-lg-0 mt-4">
-                            <img src="{{url('public')}}/assets/images/lifestyle.jpg" class="img-fluid radius-image-full"
-                                alt="client image">
-                        </div>
-                    </div>
-                </div>
+
+                
             </div>
         </div>
     </div>
@@ -251,27 +202,144 @@ Author URL: http://w3layouts.com
         </div>
     </div>
 </div>
-<div class="w3l-homeblock2 w3l-homeblock6 py-5">
-    <div class="container-fluid px-sm-5 py-lg-5 py-md-4">
+<div class="w3l-homeblock2 py-5">
+    <div class="container py-lg-5 py-md-4">
         <!-- block -->
-            <h3 class="section-title-left mb-4"> Trending Now</h3>
+        <div class="left-right">
+            <h3 class="section-title-left mb-sm-4 mb-2"> Fashion and style</h3>
+            <a href="fashiom.html" class="more btn btn-small mb-sm-0 mb-4">View more</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 item">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/fashion1.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">An easy Guide to buying Denim & My favourite styles
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="{{url('public')}}/assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Isabella ava</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/fashion2.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">The Satin Skirt & How to Wear it all year round fashion
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="{{url('public')}}/assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Charlotte mia</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="card">
+                    <div class="card-header p-0 position-relative">
+                        <a href="#blog-single.html">
+                            <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/fashion3.jpg"
+                                alt="Card image cap">
+                        </a>
+                    </div>
+                    <div class="card-body blog-details">
+                        <a href="#blog-single.html" class="blog-desc">What I’ll be Wearing this Party Season & the Festive edit
+                        </a>
+                        <div class="author align-items-center">
+                            <img src="{{url('public')}}/assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
+                            <ul class="blog-meta">
+                                <li>
+                                    <a href="author.html">Elizabeth</a> </a>
+                                </li>
+                                <li class="meta-item blog-lesson">
+                                    <span class="meta-value"> July 13, 2020 </span>. <span
+                                        class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3l-homeblock2 w3l-homeblock5 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <!-- block -->
+        <div class="left-right">
+            <h3 class="section-title-left mb-sm-4 mb-2"> Beauty</h3>
+            <a href="beauty.html" class="more btn btn-small mb-sm-0 mb-4">View more</a>
+        </div>
         <div class="row">
             <div class="col-lg-6">
                 <div class="bg-clr-white hover-box">
                     <div class="row">
-                        <div class="col-sm-6 position-relative">
-                            <a href="#blog-single.html">
-                                <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/trending1.jpg"
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/beauty1.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
-                        <div class="col-sm-6 card-body blog-details align-self">
-                            <span class="label-blue">Sports</span>
-                            <a href="#blog-single.html" class="blog-desc">Playing footbal with your feet is one thing.
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">Natural Spa - Where you feel unique and special
                             </a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
-                                vitae sit.</p>
-                            <div class="author align-items-center mt-3">
+                            <div class="author align-items-center">
+                                <img src="{{url('public')}}/assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Isabella ava</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/beauty2.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">How to get Beautiful coloring Highlights this weak
+                            </a>
+                            <div class="author align-items-center">
                                 <img src="{{url('public')}}/assets/images/a2.jpg" alt="" class="img-fluid rounded-circle" />
                                 <ul class="blog-meta">
                                     <li>
@@ -287,25 +355,50 @@ Author URL: http://w3layouts.com
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 mt-lg-0 mt-4">
+            <div class="col-lg-6 mt-4">
                 <div class="bg-clr-white hover-box">
                     <div class="row">
-                        <div class="col-sm-6 position-relative">
-                            <a href="#blog-single.html">
-                                <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/trending2.jpg"
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/beauty3.jpg"
                                     alt="Card image cap">
                             </a>
                         </div>
-                        <div class="col-sm-6 card-body blog-details align-self">
-                            <span class="label-blue">Fitness</span>
-                            <a href="#blog-single.html" class="blog-desc">Experience the state of the art fitness! Fitness on Track </a>
-                            <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit. Quis
-                                vitae sit.</p>
-                            <div class="author align-items-center mt-3">
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">New Hair Styles can look fabulous and shiny
+                            </a>
+                            <div class="author align-items-center">
                                 <img src="{{url('public')}}/assets/images/a3.jpg" alt="" class="img-fluid rounded-circle" />
                                 <ul class="blog-meta">
                                     <li>
-                                        <a href="author.html">ELizabeth</a> </a>
+                                        <a href="author.html">Elizabeth</a> </a>
+                                    </li>
+                                    <li class="meta-item blog-lesson">
+                                        <span class="meta-value"> July 13, 2020 </span>. <span
+                                            class="meta-value ml-2"><span class="fa fa-clock-o"></span> 1 min</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-4">
+                <div class="bg-clr-white hover-box">
+                    <div class="row">
+                        <div class="col-sm-5 position-relative">
+                            <a href="#blog-single.html" class="image-mobile">
+                                <img class="card-img-bottom d-block radius-image-full" src="{{url('public')}}/assets/images/beauty4.jpg"
+                                    alt="Card image cap">
+                            </a>
+                        </div>
+                        <div class="col-sm-7 card-body blog-details align-self">
+                            <a href="#blog-single.html" class="blog-desc">How our dreams should shine and spray beauty to us.</a>
+                            <div class="author align-items-center">
+                                <img src="{{url('public')}}/assets/images/a1.jpg" alt="" class="img-fluid rounded-circle" />
+                                <ul class="blog-meta">
+                                    <li>
+                                        <a href="author.html">Isabella ava</a> </a>
                                     </li>
                                     <li class="meta-item blog-lesson">
                                         <span class="meta-value"> July 13, 2020 </span>. <span
@@ -344,7 +437,7 @@ Author URL: http://w3layouts.com
             <a class="navbar-brand mb-3" href="index.html">
               <span class="fa fa-newspaper-o"></span> NewsBlog</a>
             <p class="copy-footer-28"> © 2020. All Rights Reserved. </p>
-            <h5 class="mt-2">Design by <a href="https://w3layouts.com/">Shafa Tasnim Narulita</a></h5>
+            <h5 class="mt-2">Design by <a href="https://w3layouts.com/">W3Layouts</a></h5>
           </div>
           <div class="col-lg-8 row">
             <div class="col-sm-4 col-6 footer-list-28">
@@ -388,6 +481,7 @@ Author URL: http://w3layouts.com
     <span class="fa fa-angle-up"></span>
   </button>
 @include('section.js')
+
 </body>
 
 </html>
